@@ -1,14 +1,13 @@
 //
-//  ViewController.h
+//  FMKMeViewController.h
 //  FreshMilk
 //
 //  Created by Hansen on 16/6/4.
 //  Copyright © 2016年 Hansen. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "FMKBaseViewController.h"
 
-@interface ViewController : UITabBarController
+@interface FMKMeViewController : FMKBaseViewController
 
 @end
-

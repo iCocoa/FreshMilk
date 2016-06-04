@@ -1,14 +1,13 @@
 //
-//  ViewController.h
+//  FMKHeader.h
 //  FreshMilk
 //
 //  Created by Hansen on 16/6/4.
 //  Copyright © 2016年 Hansen. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#ifndef FMKHeader_h
+#define FMKHeader_h
 
-@interface ViewController : UITabBarController
 
-@end
-
+#endif /* FMKHeader_h */

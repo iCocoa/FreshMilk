@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FMKBaseViewController.h
 //  FreshMilk
 //
 //  Created by Hansen on 16/6/4.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITabBarController
+@interface FMKBaseViewController : UIViewController
 
 @end
-

@@ -14,7 +14,18 @@
 		D8E089541D0272CD00C2854F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E089521D0272CD00C2854F /* Main.storyboard */; };
 		D8E089561D0272CD00C2854F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E089551D0272CD00C2854F /* Assets.xcassets */; };
 		D8E089591D0272CD00C2854F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E089571D0272CD00C2854F /* LaunchScreen.storyboard */; };
-		D8E089611D02733E00C2854F /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8E089601D02731700C2854F /* iconfont.ttf */; };
+		D8E089701D02803D00C2854F /* NSString+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E089651D02803D00C2854F /* NSString+Helpers.m */; };
+		D8E089711D02803D00C2854F /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E089671D02803D00C2854F /* UIColor+Helper.m */; };
+		D8E089721D02803D00C2854F /* FMKLocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0896C1D02803D00C2854F /* FMKLocationHelper.m */; };
+		D8E089731D02803D00C2854F /* FMKSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0896E1D02803D00C2854F /* FMKSingleton.m */; };
+		D8E089771D0284D900C2854F /* FMKIconfontContants.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E089761D0284D900C2854F /* FMKIconfontContants.m */; };
+		D8E0897D1D028A7700C2854F /* UIImage+Iconfont.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0897C1D028A7700C2854F /* UIImage+Iconfont.m */; };
+		D8E089821D0294C300C2854F /* FMKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E089811D0294C300C2854F /* FMKBaseViewController.m */; };
+		D8E089851D0294D900C2854F /* FMKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E089841D0294D900C2854F /* FMKHomeViewController.m */; };
+		D8E0898B1D0294F900C2854F /* FMKFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0898A1D0294F900C2854F /* FMKFindViewController.m */; };
+		D8E0898E1D02950600C2854F /* FMKMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0898D1D02950600C2854F /* FMKMeViewController.m */; };
+		D8E089911D02955300C2854F /* FMKNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E089901D02955300C2854F /* FMKNoteViewController.m */; };
+		D8E089951D02A43D00C2854F /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8E089941D02A43D00C2854F /* iconfont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +41,31 @@
 		D8E089551D0272CD00C2854F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8E089581D0272CD00C2854F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8E0895A1D0272CD00C2854F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8E089601D02731700C2854F /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		D8E089621D027C6F00C2854F /* FMKHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMKHeader.h; sourceTree = "<group>"; };
+		D8E089641D02803D00C2854F /* NSString+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helpers.h"; sourceTree = "<group>"; };
+		D8E089651D02803D00C2854F /* NSString+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helpers.m"; sourceTree = "<group>"; };
+		D8E089661D02803D00C2854F /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helper.h"; sourceTree = "<group>"; };
+		D8E089671D02803D00C2854F /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Helper.m"; sourceTree = "<group>"; };
+		D8E0896B1D02803D00C2854F /* FMKLocationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKLocationHelper.h; sourceTree = "<group>"; };
+		D8E0896C1D02803D00C2854F /* FMKLocationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMKLocationHelper.m; sourceTree = "<group>"; };
+		D8E0896D1D02803D00C2854F /* FMKSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKSingleton.h; sourceTree = "<group>"; };
+		D8E0896E1D02803D00C2854F /* FMKSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMKSingleton.m; sourceTree = "<group>"; };
+		D8E089741D02810A00C2854F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D8E089751D0284D900C2854F /* FMKIconfontContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKIconfontContants.h; sourceTree = "<group>"; };
+		D8E089761D0284D900C2854F /* FMKIconfontContants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMKIconfontContants.m; sourceTree = "<group>"; };
+		D8E0897B1D028A7700C2854F /* UIImage+Iconfont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Iconfont.h"; sourceTree = "<group>"; };
+		D8E0897C1D028A7700C2854F /* UIImage+Iconfont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Iconfont.m"; sourceTree = "<group>"; };
+		D8E089801D0294C300C2854F /* FMKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKBaseViewController.h; sourceTree = "<group>"; };
+		D8E089811D0294C300C2854F /* FMKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMKBaseViewController.m; sourceTree = "<group>"; };
+		D8E089831D0294D900C2854F /* FMKHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKHomeViewController.h; sourceTree = "<group>"; };
+		D8E089841D0294D900C2854F /* FMKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMKHomeViewController.m; sourceTree = "<group>"; };
+		D8E089891D0294F900C2854F /* FMKFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKFindViewController.h; sourceTree = "<group>"; };
+		D8E0898A1D0294F900C2854F /* FMKFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMKFindViewController.m; sourceTree = "<group>"; };
+		D8E0898C1D02950600C2854F /* FMKMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKMeViewController.h; sourceTree = "<group>"; };
+		D8E0898D1D02950600C2854F /* FMKMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMKMeViewController.m; sourceTree = "<group>"; };
+		D8E0898F1D02955300C2854F /* FMKNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKNoteViewController.h; sourceTree = "<group>"; };
+		D8E089901D02955300C2854F /* FMKNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMKNoteViewController.m; sourceTree = "<group>"; };
+		D8E089941D02A43D00C2854F /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		FE66F57580668E0533108965 /* libPods-FreshMilk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreshMilk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,6 +119,11 @@
 		D8E089481D0272CD00C2854F /* FreshMilk */ = {
 			isa = PBXGroup;
 			children = (
+				D8E089631D02803D00C2854F /* Categories */,
+				D8E089681D02803D00C2854F /* Controllers */,
+				D8E089691D02803D00C2854F /* Models */,
+				D8E0896A1D02803D00C2854F /* Others */,
+				D8E0896F1D02803D00C2854F /* Views */,
 				D8E0894C1D0272CD00C2854F /* AppDelegate.h */,
 				D8E0894D1D0272CD00C2854F /* AppDelegate.m */,
 				D8E0894F1D0272CD00C2854F /* ViewController.h */,
@@ -100,10 +140,69 @@
 		D8E089491D0272CD00C2854F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D8E089601D02731700C2854F /* iconfont.ttf */,
+				D8E089941D02A43D00C2854F /* iconfont.ttf */,
+				D8E089741D02810A00C2854F /* PrefixHeader.pch */,
 				D8E0894A1D0272CD00C2854F /* main.m */,
+				D8E089621D027C6F00C2854F /* FMKHeader.h */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8E089631D02803D00C2854F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D8E0897B1D028A7700C2854F /* UIImage+Iconfont.h */,
+				D8E0897C1D028A7700C2854F /* UIImage+Iconfont.m */,
+				D8E089641D02803D00C2854F /* NSString+Helpers.h */,
+				D8E089651D02803D00C2854F /* NSString+Helpers.m */,
+				D8E089661D02803D00C2854F /* UIColor+Helper.h */,
+				D8E089671D02803D00C2854F /* UIColor+Helper.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		D8E089681D02803D00C2854F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8E089801D0294C300C2854F /* FMKBaseViewController.h */,
+				D8E089811D0294C300C2854F /* FMKBaseViewController.m */,
+				D8E089831D0294D900C2854F /* FMKHomeViewController.h */,
+				D8E089841D0294D900C2854F /* FMKHomeViewController.m */,
+				D8E089891D0294F900C2854F /* FMKFindViewController.h */,
+				D8E0898A1D0294F900C2854F /* FMKFindViewController.m */,
+				D8E0898F1D02955300C2854F /* FMKNoteViewController.h */,
+				D8E089901D02955300C2854F /* FMKNoteViewController.m */,
+				D8E0898C1D02950600C2854F /* FMKMeViewController.h */,
+				D8E0898D1D02950600C2854F /* FMKMeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D8E089691D02803D00C2854F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D8E0896A1D02803D00C2854F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				D8E0896B1D02803D00C2854F /* FMKLocationHelper.h */,
+				D8E0896C1D02803D00C2854F /* FMKLocationHelper.m */,
+				D8E0896D1D02803D00C2854F /* FMKSingleton.h */,
+				D8E0896E1D02803D00C2854F /* FMKSingleton.m */,
+				D8E089751D0284D900C2854F /* FMKIconfontContants.h */,
+				D8E089761D0284D900C2854F /* FMKIconfontContants.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		D8E0896F1D02803D00C2854F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +233,7 @@
 		D8E0893E1D0272CD00C2854F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FMK;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Hansen;
 				TargetAttributes = {
@@ -166,7 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E089611D02733E00C2854F /* iconfont.ttf in Resources */,
+				D8E089951D02A43D00C2854F /* iconfont.ttf in Resources */,
 				D8E089591D0272CD00C2854F /* LaunchScreen.storyboard in Resources */,
 				D8E089561D0272CD00C2854F /* Assets.xcassets in Resources */,
 				D8E089541D0272CD00C2854F /* Main.storyboard in Resources */,
@@ -213,9 +313,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E089771D0284D900C2854F /* FMKIconfontContants.m in Sources */,
+				D8E089911D02955300C2854F /* FMKNoteViewController.m in Sources */,
 				D8E089511D0272CD00C2854F /* ViewController.m in Sources */,
+				D8E089711D02803D00C2854F /* UIColor+Helper.m in Sources */,
+				D8E089731D02803D00C2854F /* FMKSingleton.m in Sources */,
+				D8E0898E1D02950600C2854F /* FMKMeViewController.m in Sources */,
+				D8E0898B1D0294F900C2854F /* FMKFindViewController.m in Sources */,
+				D8E089821D0294C300C2854F /* FMKBaseViewController.m in Sources */,
 				D8E0894E1D0272CD00C2854F /* AppDelegate.m in Sources */,
+				D8E089851D0294D900C2854F /* FMKHomeViewController.m in Sources */,
+				D8E089721D02803D00C2854F /* FMKLocationHelper.m in Sources */,
 				D8E0894B1D0272CD00C2854F /* main.m in Sources */,
+				D8E089701D02803D00C2854F /* NSString+Helpers.m in Sources */,
+				D8E0897D1D028A7700C2854F /* UIImage+Iconfont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +378,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -277,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -314,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
