@@ -1,6 +1,0 @@
-framework module ThinkpageAPI {
-  umbrella header "ThinkpageAPI.h"
-
-  export *
-  module * { export * }
-}

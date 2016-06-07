@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9BD6045D454B15DAFE6588F0 /* libPods-FreshMilk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE66F57580668E0533108965 /* libPods-FreshMilk.a */; };
-		D8970A9C1D03124100F33CED /* ThinkpageAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E089A11D02E45100C2854F /* ThinkpageAPI.framework */; };
-		D8970A9D1D03124100F33CED /* ThinkpageAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8E089A11D02E45100C2854F /* ThinkpageAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8970AA21D031BDC00F33CED /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8970AA11D031BDC00F33CED /* iconfont.ttf */; };
 		D8E0894B1D0272CD00C2854F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0894A1D0272CD00C2854F /* main.m */; };
 		D8E0894E1D0272CD00C2854F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0894D1D0272CD00C2854F /* AppDelegate.m */; };
@@ -40,7 +38,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D8970A9D1D03124100F33CED /* ThinkpageAPI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,7 +88,6 @@
 		D8E0899A1D02DEEF00C2854F /* FMKWeatherHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMKWeatherHelper.m; sourceTree = "<group>"; };
 		D8E0899C1D02DF9500C2854F /* FMKWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKWeather.h; sourceTree = "<group>"; };
 		D8E0899D1D02DF9500C2854F /* FMKWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMKWeather.m; sourceTree = "<group>"; };
-		D8E089A11D02E45100C2854F /* ThinkpageAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ThinkpageAPI.framework; sourceTree = "<group>"; };
 		FE66F57580668E0533108965 /* libPods-FreshMilk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreshMilk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,7 +97,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BD6045D454B15DAFE6588F0 /* libPods-FreshMilk.a in Frameworks */,
-				D8970A9C1D03124100F33CED /* ThinkpageAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				D8970AA11D031BDC00F33CED /* iconfont.ttf */,
-				D8E089A11D02E45100C2854F /* ThinkpageAPI.framework */,
 				D8E089741D02810A00C2854F /* PrefixHeader.pch */,
 				D8E0894A1D0272CD00C2854F /* main.m */,
 				D8E089621D027C6F00C2854F /* FMKHeader.h */,

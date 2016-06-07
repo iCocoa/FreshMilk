@@ -7,9 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ThinkpageAPI/TPWeatherNow.h>
 
 @interface FMKWeather : NSObject
-@property (nonatomic, strong) TPWeatherNow *currentWeather;
 @property (nonatomic, readonly, copy) NSDictionary *iconfontDict;
 @end

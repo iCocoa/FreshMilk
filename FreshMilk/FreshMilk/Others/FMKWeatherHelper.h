@@ -7,13 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ThinkpageAPI/TPWeatherManager.h>
-
-typedef void(^Block)(TPWeatherNow *weather);
 
 @interface FMKWeatherHelper : NSObject
 
 + (instancetype)helper;
-- (void)getCurrentWeatherWithCompletionBlock:(Block)completion;
 
 @end
