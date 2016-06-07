@@ -8,11 +8,20 @@
 
 #import "FMKLocationHelper.h"
 #import "FMKSingleton.h"
+#import "FMKCityModel.h"
 @import CoreLocation;
 @import UIKit;
 
+static NSString *const kSelectedCity = @"selectedCity";
+
 @interface FMKLocationHelper ()<CLLocationManagerDelegate>
 @property (nonatomic, strong) CLLocationManager *locationManager;
+@property (nonatomic, strong) FMKCityModel *defaultCity;
+@property (nonatomic, strong) FMKCityModel *selectedCity;
+@property (nonatomic, strong) FMKCityModel *currentCity;
+//@property (nonatomic, strong) FMKCityModel *lastLocateCity;
+@property (nonatomic, copy) locateSuccess success;
+@property (nonatomic, copy) locateFailure failure;
 @end
 
 @implementation FMKLocationHelper
@@ -20,6 +29,15 @@
 + (instancetype)shareLocationManager
 {
     return [FMKSingleton sharedInstance:[self class]];
+}
+
+- (void)startLocateWithSuccess:(locateSuccess)success failure:(locateFailure)failure
+{
+    self.success = success;
+    self.failure = failure;
+    self.selectedCity = [[NSUserDefaults standardUserDefaults] objectForKey:kSelectedCity];
+    self.currentCity = [[FMKCityModel alloc] init];
+    [self startLocate];
 }
 
 - (void)startLocate
@@ -37,38 +55,33 @@
 {
     CLLocation *location = [locations lastObject];
     
-    CLGeocoder * geoCoder = [[CLGeocoder alloc] init];
+    CLGeocoder *geoCoder = [[CLGeocoder alloc] init];
     
     [geoCoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
-        for (CLPlacemark * placemark in placemarks) {
-            NSString *localityName = [placemark locality];
-            NSArray *prefixNameArr = [localityName componentsSeparatedByString:@"市"];
-            if (prefixNameArr.count > 0) {
-                localityName = [prefixNameArr objectAtIndex:0];
-                NSLog(@"定位城市名字=======%@",placemark);
-                NSLog(@">>>>%@",localityName);
-                break;
+        if (placemarks.count > 0) {
+            CLPlacemark *placemark = placemarks[0];
+            NSString *currentCityName = placemark.locality;
+            if (!currentCityName) {
+                currentCityName = placemark.administrativeArea;
             }
+            self.currentCity.cityName = currentCityName;
+            self.currentCity.longitude = placemark.location.coordinate.longitude;
+            self.currentCity.latitude = placemark.location.coordinate.latitude;
+            
+            if (!self.selectedCity) {
+                self.selectedCity = self.currentCity;
+                [[NSUserDefaults standardUserDefaults] setObject:self.selectedCity forKey:kSelectedCity];
+            } else {
+                if (![self.selectedCity.cityName isEqualToString:self.currentCity.cityName]) {
+                    // 让用户选择是否切换到当前城市。
+                }
+            }
+            
+            __weak __typeof(self) weakSelf = self;
+            self.success(weakSelf.currentCity);
         }
     }];
-    [self.locationManager stopUpdatingLocation];
-}
-
-- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
-{
-    CLGeocoder * geoCoder = [[CLGeocoder alloc] init];
     
-    [geoCoder reverseGeocodeLocation:newLocation completionHandler:^(NSArray *placemarks, NSError *error) {
-        for (CLPlacemark * placemark in placemarks) {
-            NSLog(@"定位城市名字=======%@",placemark);
-            NSString *localityName = [placemark locality];
-            NSArray *prefixNameArr = [localityName componentsSeparatedByString:@"市"];
-            if (prefixNameArr.count > 0) {
-                localityName = [prefixNameArr objectAtIndex:0];
-                break;
-            }
-        }
-    }];
     [self.locationManager stopUpdatingLocation];
 }
 
@@ -80,6 +93,8 @@
     if ([error code] == kCLErrorLocationUnknown) {
         //无法获取位置信息
     }
+    __weak __typeof(self) weakSelf = self;
+    self.failure(weakSelf.selectedCity ? weakSelf.selectedCity : [FMKCityModel defaultCity]);
 }
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status

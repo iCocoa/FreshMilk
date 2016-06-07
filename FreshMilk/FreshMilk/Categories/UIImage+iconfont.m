@@ -17,6 +17,7 @@
 
 + (UIImage *)imageWithIconCode:(NSString *)iconCode fontName:(NSString*)fontName fontSize:(CGFloat)fontSize imageSize:(CGSize)imageSize color:(UIColor *)color
 {
+    NSLog(@"%@",iconCode);
     UIGraphicsBeginImageContextWithOptions(imageSize, NO, [[UIScreen mainScreen] scale]);
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, imageSize.width, imageSize.height)];
     label.font = [UIFont fontWithName:fontName size:fontSize];

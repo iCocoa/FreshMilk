@@ -22,9 +22,16 @@
 
 @implementation ViewController
 
+#pragma mark - Life cycle method
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self addChildViewControllers];
+}
+
+#pragma mark - Private method
+- (void)addChildViewControllers
+{
     [self addChildVc:[FMKHomeViewController class] iconCode:FMKIconHome];
     [self addChildVc:[FMKNoteViewController class] iconCode:FMKIconNote];
     [self addChildVc:[FMKFindViewController class] iconCode:FMKIconFind];

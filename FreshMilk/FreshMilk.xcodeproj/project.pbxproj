@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9BD6045D454B15DAFE6588F0 /* libPods-FreshMilk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE66F57580668E0533108965 /* libPods-FreshMilk.a */; };
+		D8970A9C1D03124100F33CED /* ThinkpageAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E089A11D02E45100C2854F /* ThinkpageAPI.framework */; };
+		D8970A9D1D03124100F33CED /* ThinkpageAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8E089A11D02E45100C2854F /* ThinkpageAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8970AA21D031BDC00F33CED /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8970AA11D031BDC00F33CED /* iconfont.ttf */; };
 		D8E0894B1D0272CD00C2854F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0894A1D0272CD00C2854F /* main.m */; };
 		D8E0894E1D0272CD00C2854F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0894D1D0272CD00C2854F /* AppDelegate.m */; };
 		D8E089511D0272CD00C2854F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E089501D0272CD00C2854F /* ViewController.m */; };
@@ -25,12 +28,29 @@
 		D8E0898B1D0294F900C2854F /* FMKFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0898A1D0294F900C2854F /* FMKFindViewController.m */; };
 		D8E0898E1D02950600C2854F /* FMKMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0898D1D02950600C2854F /* FMKMeViewController.m */; };
 		D8E089911D02955300C2854F /* FMKNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E089901D02955300C2854F /* FMKNoteViewController.m */; };
-		D8E089951D02A43D00C2854F /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8E089941D02A43D00C2854F /* iconfont.ttf */; };
+		D8E089981D02C3C900C2854F /* FMKCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E089971D02C3C900C2854F /* FMKCityModel.m */; };
+		D8E0899B1D02DEEF00C2854F /* FMKWeatherHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0899A1D02DEEF00C2854F /* FMKWeatherHelper.m */; };
+		D8E0899E1D02DF9500C2854F /* FMKWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E0899D1D02DF9500C2854F /* FMKWeather.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8970A9E1D03124200F33CED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D8970A9D1D03124100F33CED /* ThinkpageAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		095F7CB71CC0ECC001F25024 /* Pods-FreshMilk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreshMilk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreshMilk/Pods-FreshMilk.debug.xcconfig"; sourceTree = "<group>"; };
 		36CDE22F5F9EAC41F6C3790E /* Pods-FreshMilk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreshMilk.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreshMilk/Pods-FreshMilk.release.xcconfig"; sourceTree = "<group>"; };
+		D8970AA11D031BDC00F33CED /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		D8E089461D0272CD00C2854F /* FreshMilk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshMilk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E0894A1D0272CD00C2854F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D8E0894C1D0272CD00C2854F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,7 +85,13 @@
 		D8E0898D1D02950600C2854F /* FMKMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMKMeViewController.m; sourceTree = "<group>"; };
 		D8E0898F1D02955300C2854F /* FMKNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKNoteViewController.h; sourceTree = "<group>"; };
 		D8E089901D02955300C2854F /* FMKNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMKNoteViewController.m; sourceTree = "<group>"; };
-		D8E089941D02A43D00C2854F /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		D8E089961D02C3C900C2854F /* FMKCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKCityModel.h; sourceTree = "<group>"; };
+		D8E089971D02C3C900C2854F /* FMKCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMKCityModel.m; sourceTree = "<group>"; };
+		D8E089991D02DEEF00C2854F /* FMKWeatherHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKWeatherHelper.h; sourceTree = "<group>"; };
+		D8E0899A1D02DEEF00C2854F /* FMKWeatherHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMKWeatherHelper.m; sourceTree = "<group>"; };
+		D8E0899C1D02DF9500C2854F /* FMKWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMKWeather.h; sourceTree = "<group>"; };
+		D8E0899D1D02DF9500C2854F /* FMKWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMKWeather.m; sourceTree = "<group>"; };
+		D8E089A11D02E45100C2854F /* ThinkpageAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ThinkpageAPI.framework; sourceTree = "<group>"; };
 		FE66F57580668E0533108965 /* libPods-FreshMilk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreshMilk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BD6045D454B15DAFE6588F0 /* libPods-FreshMilk.a in Frameworks */,
+				D8970A9C1D03124100F33CED /* ThinkpageAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +167,8 @@
 		D8E089491D0272CD00C2854F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D8E089941D02A43D00C2854F /* iconfont.ttf */,
+				D8970AA11D031BDC00F33CED /* iconfont.ttf */,
+				D8E089A11D02E45100C2854F /* ThinkpageAPI.framework */,
 				D8E089741D02810A00C2854F /* PrefixHeader.pch */,
 				D8E0894A1D0272CD00C2854F /* main.m */,
 				D8E089621D027C6F00C2854F /* FMKHeader.h */,
@@ -181,6 +209,10 @@
 		D8E089691D02803D00C2854F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D8E089961D02C3C900C2854F /* FMKCityModel.h */,
+				D8E089971D02C3C900C2854F /* FMKCityModel.m */,
+				D8E0899C1D02DF9500C2854F /* FMKWeather.h */,
+				D8E0899D1D02DF9500C2854F /* FMKWeather.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,6 +226,8 @@
 				D8E0896E1D02803D00C2854F /* FMKSingleton.m */,
 				D8E089751D0284D900C2854F /* FMKIconfontContants.h */,
 				D8E089761D0284D900C2854F /* FMKIconfontContants.m */,
+				D8E089991D02DEEF00C2854F /* FMKWeatherHelper.h */,
+				D8E0899A1D02DEEF00C2854F /* FMKWeatherHelper.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -217,6 +251,7 @@
 				D8E089431D0272CD00C2854F /* Frameworks */,
 				D8E089441D0272CD00C2854F /* Resources */,
 				67706E62BE687036B0E88B99 /* Copy Pods Resources */,
+				D8970A9E1D03124200F33CED /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,7 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E089951D02A43D00C2854F /* iconfont.ttf in Resources */,
+				D8970AA21D031BDC00F33CED /* iconfont.ttf in Resources */,
 				D8E089591D0272CD00C2854F /* LaunchScreen.storyboard in Resources */,
 				D8E089561D0272CD00C2854F /* Assets.xcassets in Resources */,
 				D8E089541D0272CD00C2854F /* Main.storyboard in Resources */,
@@ -315,6 +350,7 @@
 			files = (
 				D8E089771D0284D900C2854F /* FMKIconfontContants.m in Sources */,
 				D8E089911D02955300C2854F /* FMKNoteViewController.m in Sources */,
+				D8E089981D02C3C900C2854F /* FMKCityModel.m in Sources */,
 				D8E089511D0272CD00C2854F /* ViewController.m in Sources */,
 				D8E089711D02803D00C2854F /* UIColor+Helper.m in Sources */,
 				D8E089731D02803D00C2854F /* FMKSingleton.m in Sources */,
@@ -323,10 +359,12 @@
 				D8E089821D0294C300C2854F /* FMKBaseViewController.m in Sources */,
 				D8E0894E1D0272CD00C2854F /* AppDelegate.m in Sources */,
 				D8E089851D0294D900C2854F /* FMKHomeViewController.m in Sources */,
+				D8E0899B1D02DEEF00C2854F /* FMKWeatherHelper.m in Sources */,
 				D8E089721D02803D00C2854F /* FMKLocationHelper.m in Sources */,
 				D8E0894B1D0272CD00C2854F /* main.m in Sources */,
 				D8E089701D02803D00C2854F /* NSString+Helpers.m in Sources */,
 				D8E0897D1D028A7700C2854F /* UIImage+Iconfont.m in Sources */,
+				D8E0899E1D02DF9500C2854F /* FMKWeather.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -426,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -438,6 +476,10 @@
 			baseConfigurationReference = 095F7CB71CC0ECC001F25024 /* Pods-FreshMilk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FreshMilk",
+				);
 				INFOPLIST_FILE = FreshMilk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hansen.FreshMilk;
@@ -450,6 +492,10 @@
 			baseConfigurationReference = 36CDE22F5F9EAC41F6C3790E /* Pods-FreshMilk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FreshMilk",
+				);
 				INFOPLIST_FILE = FreshMilk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hansen.FreshMilk;

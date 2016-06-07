@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DEB517EA6635E409E5DAE9C2"
+               BlueprintIdentifier = "5E7F6695178E0CFAFE1AEFE9"
                BuildableName = "libPods-FreshMilk.a"
                BlueprintName = "Pods-FreshMilk"
                ReferencedContainer = "container:Pods.xcodeproj">

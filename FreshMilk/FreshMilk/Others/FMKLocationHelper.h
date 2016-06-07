@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+@class FMKCityModel;
+
+typedef void(^locateSuccess)(FMKCityModel *city);
+typedef void(^locateFailure)(FMKCityModel *city);
 
 @interface FMKLocationHelper : NSObject
+
 + (instancetype)shareLocationManager;
+- (void)startLocateWithSuccess:(locateSuccess)success failure:(locateFailure)failure;
 @end
