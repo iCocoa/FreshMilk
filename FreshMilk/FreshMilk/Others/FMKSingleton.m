@@ -9,7 +9,8 @@
 #import "FMKSingleton.h"
 
 @implementation FMKSingleton
-+ (id)sharedInstance:(Class)className {
++ (id)sharedInstance:(Class)className
+{
     static id instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
